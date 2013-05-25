@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/jquery-ui.css" >
+		<link rel="stylesheet" href="css/puzzler.css" >
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/control.js"></script>
+		<script type="text/javascript" src="js/display.js"></script>
+		<script type="text/javascript" src="js/puzzler.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			initialize_game();
+			open_popup_level();
+		});
+		</script>
+		<title></title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="wrapper-container">
+				<header>
+					<div class="ribbon">
+						<strong class="ribbon-content"><h1>1WEB Project - Puzzler</h1></strong>
+					</div>
+				</header>
+
+				<table id="mixed"></table>
+				<table id="assembled"></table>
+				<table id="original"></table>
+				
+				<fieldset class="scoring">
+					<legend><img src="image/crown.jpg" alt="" /></legend>
+					
+					<table>
+						<tr>
+							<td><div class="scoring_title">Scoring</div></td>
+							<td>
+								<div class="scoring_content">
+									<span id="timer"></span> sec <img src="image/timer.jpg" alt="" />
+									<ol id="ranking"></ol>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+				
+				<span id="result"></div>
+				
+				<div id="dialog-level" title="Basic modal dialog">
+					<button id="level1">Easy</label>
+					<button id="level2">Medium</label>
+					<button id="level3">Hard</label>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

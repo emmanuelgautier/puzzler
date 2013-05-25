@@ -1,0 +1,179 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #8AB5DB;
+}
+
+header, footer, section {
+	display: block;
+}
+
+.wrapper {
+	display: block;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 5px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.wrapper-container {
+	border: 1px solid gray;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+table {
+	display: inline-table;
+	margin-left: 25px;
+	min-width: 125px;
+	min-height: 125px;
+}
+
+td{
+	border: 2px solid black;
+	height: 75px;
+	width: 75px;
+	padding: 0;
+	margin: 0;
+}
+
+#assembled, #original {
+	border-collapse: collapse;
+}
+
+#mixed{
+	border-spacing: 25px;
+	border-right: 1px solid black;
+}
+
+.scoring {
+	width: 20%;
+	padding: 0;
+	margin-left: 10%;
+}
+
+.scoring legend {
+	margin-left: 28%;
+}
+
+.scoring legend img {
+	width: 75px;
+	height: 50px;
+}
+
+.scoring table {
+	border-collapse: collapse;
+	border: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.scoring table td {
+	border: none;
+}
+
+.scoring table td:first-child {
+	width: 25%;
+}
+
+.scoring table td:last-child
+{
+	width: 75%;
+}
+
+.scoring_title {
+	font-weight: bold;
+	font-size: 22px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.scoring_content img {
+	width: 20px;
+	height: 20px;
+}
+
+#result {
+	color: green;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+header {
+	width: 40%;
+	margin-left: 25%;
+	margin-bottom: 100px;
+}
+
+.ribbon {
+   width: 399px;
+   position: absolute;
+   text-align: center;
+   font-size: 18px!important;
+   background: #707070;
+   font-family: 'Helvetica Neue',Helvetica, sans-serif;
+}
+
+.ribbon h1 {
+   font-size: 21px!important;
+   color: #543e3e;
+   margin:0px;
+   padding: 15px 10px;
+}
+
+.ribbon:before, .ribbon:after {
+   position: absolute;
+   display: block;
+   bottom: -1em;
+   border: 1.5em solid #707070;
+   z-index: -1;
+}
+
+.ribbon:before {
+   left: -2em;
+   border-right-width: 1.5em;
+   border-left-color: transparent;
+}
+
+.ribbon:after {
+   right: -2em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+   border-color: #707070 transparent transparent transparent;
+   position: absolute;
+   display: block;
+   border-style: solid;
+   bottom: -1em;
+   content: '';
+}
+
+.ribbon .ribbon-content:before {
+   left: 0;
+   border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+   right: 0;
+   border-width: 1em 1em 0 0;
+}
+
+.ribbon-stitches-top {
+   margin-top:2px;
+   border-top: 0px dashed rgba(0, 0, 0, 0.2);
+}
+
+.ribbon-stitches-bottom {
+   margin-bottom:2px;
+   border-top: 0px dashed rgba(0, 0, 0, 0.2);
+}
