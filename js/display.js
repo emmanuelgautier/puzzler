@@ -21,9 +21,9 @@ function display_scoring(scoring)
 	var order = "";
 	
 	var i, length = scoring.length;
-	for(i=0; i<length;i++)
+	for(i=0; i < length;i++)
 	{
-		order += "<li>"+scoring[i]+" secs</li>";
+		order += "<li>" + scoring[i] + " secs</li>";
 	}
 	
 	$("#ranking").html(order);
@@ -43,7 +43,7 @@ function generate_table(table_element)
 		
 		for(j=0; j<level; j++)
 		{
-			table += "<td id='"+(i*level + j)+"'>";
+			table += "<td id='"+ (i * level + j) +"'>";
 			
 			table += "</td>";
 		}
@@ -61,10 +61,10 @@ function insert_table(table_element, index)
 	var tile_dimension = dimension / level;
 	
 	var j = Math.pow(level, 2);
-	for(var i=0; i<j; i++)
+	for(var i=0; i < j; i++)
 	{
 		positionX = -1 * (index[i] % level) * tile_dimension;
-		positionY = -1 *(index[i] - (index[i] % level)) / level * tile_dimension;
+		positionY = -1 * (index[i] - (index[i] % level)) / level * tile_dimension;
 		
 		$("#"+table_element+" #"+i).css({'background': "url('image/"+image[rand]+".jpg') top left no-repeat", "background-position": positionX+"px "+positionY+"px", "background-size": dimension+"px"});
 	}

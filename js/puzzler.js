@@ -8,10 +8,10 @@ var interval_id;
 var duration;
 var scoring = Array();
 
-//fonction chargé de l'initialisation du jeu
+//fonction charg� de l'initialisation du jeu
 function initialize_game()
 {
-	//on dit que le jeu n'est pas démarré
+	//on dit que le jeu n'est pas d�marr�
 	started = false;
 	
 	rand = Math.round(Math.random() * 10) % image.length;
@@ -89,11 +89,11 @@ function play($draggable, $item)
 	//on met à jour le tableau contenant les valeurs d'ordre du puzzle
 	updateArrayPlaced($draggable, $item);
 	
-	if(isMixedArray($draggable) && placed != -1)
+	if(isMixedArray($draggable) && placed !== -1)
 		$draggable.attr('id', item_index);
 	
 	//on commence par vérifier si l'élement est à ajouter ou alors à inverser
-	if(isMixedArray($draggable) && placed == -1)
+	if(isMixedArray($draggable) && placed === -1)
 		copyImage($draggable, $item);
 	else
 		invertImage($draggable, $item);
@@ -216,13 +216,13 @@ function updateScoring(duration)
 	var score, i, j=0, length = scoring.length;
 	for(i=0; i < 3; i++)
 	{
-		if(i == length){
+		if(i === length){
 			new_scoring[i] = duration;
 			break;
 		} 
 		
 		score = parseInt(scoring[i]);
-		if(duration < score && i == j)
+		if(duration < score && i === j)
 			new_scoring[i] = duration;
 		else {
 			new_scoring[i] = scoring[j];
