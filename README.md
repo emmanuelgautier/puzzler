@@ -1,7 +1,7 @@
-puzzler
+Puzzler
 =======
 
-Jeu de puzzle en JavaScript
+Jeu de puzzle en JavaScript réalisé à l'aide de jQuery et jQuery Mobile. Ce projet a été réalisé dans le cadre d'un projet d'école.
 
 Licence
 =======
